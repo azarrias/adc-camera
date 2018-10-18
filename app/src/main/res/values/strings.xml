@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Camera</string>
+    <string name="btnTakePhoto">Take a photo</string>
+    <string name="testButton">Clicked button to take a photo</string>
+</resources>
