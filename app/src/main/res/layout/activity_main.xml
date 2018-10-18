@@ -24,4 +24,14 @@
         android:textStyle="bold"
         android:textSize="18sp"
         android:text="@string/btnTakePhoto" />
+
+    <Button
+        android:id="@+id/btnSendEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#00F"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="@string/btnSendEmail" />
 </LinearLayout>

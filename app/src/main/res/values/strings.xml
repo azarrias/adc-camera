@@ -2,4 +2,7 @@
     <string name="app_name">My Camera</string>
     <string name="btnTakePhoto">Take a photo</string>
     <string name="testButton">Clicked button to take a photo</string>
+    <string name="btnSendEmail">Send e-mail</string>
+    <string name="emailDest">johndoe@gmail.com</string>
+    <string name="emailSubject">Android Course</string>
 </resources>
