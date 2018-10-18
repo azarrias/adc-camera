@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btnTakePhoto;
     private Button btnSendEmail;
+    private Button btnSecondActivity;
     private ImageView iView;
 
     @Override
@@ -41,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.btnSendEmail:
                         sendEmail(getString(R.string.emailDest), getString(R.string.emailSubject));
                         break;
+                    case R.id.btnSecondActivity:
+                        gotoSecondActivity(v);
+                        break;
                 }
 
             }
@@ -50,6 +54,9 @@ public class MainActivity extends AppCompatActivity {
 
         btnSendEmail = (Button)findViewById(R.id.btnSendEmail);
         btnSendEmail.setOnClickListener(listener);
+
+        btnSecondActivity = (Button)findViewById(R.id.btnSecondActivity);
+        btnSecondActivity.setOnClickListener(listener);
     }
 
     private void takePicture(){
@@ -74,5 +81,12 @@ public class MainActivity extends AppCompatActivity {
             Bitmap imgBmp = (Bitmap)extras.get("data");
             iView.setImageBitmap(imgBmp);
         }
+    }
+
+    public void gotoSecondActivity(View view){
+        // Explicit intent
+        Intent i = new Intent(this, SecondActivity.class);
+        i.putExtra("name", "John Doe");
+        startActivity(i);
     }
 }

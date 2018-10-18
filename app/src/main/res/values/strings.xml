@@ -5,4 +5,5 @@
     <string name="btnSendEmail">Send e-mail</string>
     <string name="emailDest">johndoe@gmail.com</string>
     <string name="emailSubject">Android Course</string>
+    <string name="btnSecondActivity">Go to second activity</string>
 </resources>
